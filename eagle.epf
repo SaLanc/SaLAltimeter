@@ -7,6 +7,13 @@ Desktop="Desktop"
 
 [Globals]
 AutoSaveProject=1
+UsedLibrary="C:/EAGLE-7.5.0/lbr/SaL-lib.lbr"
+UsedLibrary="C:/EAGLE-7.5.0/lbr/telcom.lbr"
+UsedLibrary="C:/EAGLE-7.5.0/lbr/telecontrolli.lbr"
+UsedLibrary="C:/EAGLE-7.5.0/lbr/telefunken.lbr"
+UsedLibrary="C:/EAGLE-7.5.0/lbr/testpad.lbr"
+UsedLibrary="C:/EAGLE-7.5.0/lbr/texas-sn55-sn75.lbr"
+UsedLibrary="C:/EAGLE-7.5.0/lbr/texas.lbr"
 UsedLibrary="C:/EAGLE-7.5.0/lbr/SparkFun-Eagle-Libraries/GeekAmmo.lbr"
 UsedLibrary="C:/EAGLE-7.5.0/lbr/SparkFun-Eagle-Libraries/LilyPad-Wearables.lbr"
 UsedLibrary="C:/EAGLE-7.5.0/lbr/SparkFun-Eagle-Libraries/SparkFun-Aesthetics.lbr"
@@ -27,12 +34,11 @@ UsedLibrary="C:/EAGLE-7.5.0/lbr/SparkFun-Eagle-Libraries/SparkFun-Retired.lbr"
 UsedLibrary="C:/EAGLE-7.5.0/lbr/SparkFun-Eagle-Libraries/SparkFun-RF.lbr"
 UsedLibrary="C:/EAGLE-7.5.0/lbr/SparkFun-Eagle-Libraries/SparkFun-Sensors.lbr"
 UsedLibrary="C:/EAGLE-7.5.0/lbr/SparkFun-Eagle-Libraries/User-Submitted.lbr"
-UsedLibrary="C:/EAGLE-7.5.0/lbr/SaL-lib.lbr"
-UsedLibrary="C:/EAGLE-7.5.0/lbr/MS5607.lbr"
+UsedLibrary="C:/EAGLE-7.5.0/lbr/Adafruit-Eagle-Library/adafruit.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="-8 -30 897 591"
+Loc="284 157 1284 750"
 State=2
 Number=0
 
