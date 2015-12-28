@@ -6279,9 +6279,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="NAME" x="333.248" y="258.953" size="1.27" layer="95"/>
 <attribute name="VALUE" x="334.264" y="254.381" size="1.778" layer="96"/>
 </instance>
-<instance part="C25" gate="G$1" x="322.58" y="261.62" smashed="yes">
-<attribute name="NAME" x="323.088" y="264.033" size="1.27" layer="95"/>
-<attribute name="VALUE" x="324.104" y="259.461" size="1.778" layer="96"/>
+<instance part="C25" gate="G$1" x="322.58" y="256.54" smashed="yes">
+<attribute name="NAME" x="323.088" y="258.953" size="1.27" layer="95"/>
+<attribute name="VALUE" x="324.104" y="254.381" size="1.778" layer="96"/>
 </instance>
 <instance part="C26" gate="G$1" x="314.96" y="261.62" smashed="yes">
 <attribute name="NAME" x="315.468" y="264.033" size="1.27" layer="95"/>
@@ -6293,10 +6293,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </instance>
 <instance part="GND26" gate="1" x="340.36" y="264.16" rot="R180"/>
 <instance part="GND27" gate="1" x="332.74" y="264.16" rot="R180"/>
-<instance part="GND28" gate="1" x="322.58" y="269.24" rot="R180"/>
+<instance part="GND28" gate="1" x="322.58" y="266.7" rot="R180"/>
 <instance part="GND29" gate="1" x="314.96" y="269.24" rot="R180"/>
 <instance part="GND30" gate="1" x="309.88" y="269.24" rot="R180"/>
-<instance part="SUPPLY15" gate="G$1" x="327.66" y="271.78"/>
+<instance part="SUPPLY15" gate="G$1" x="327.66" y="269.24"/>
 <instance part="SUPPLY16" gate="G$1" x="320.04" y="271.78"/>
 <instance part="C28" gate="G$1" x="297.18" y="264.16" smashed="yes">
 <attribute name="NAME" x="294.513" y="263.906" size="1.27" layer="95" rot="R90"/>
@@ -6503,10 +6503,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="U$7" gate="G$1" pin="AVDD_SYNTH2"/>
 <pinref part="C25" gate="G$1" pin="2"/>
-<wire x1="322.58" y1="248.92" x2="322.58" y2="259.08" width="0.1524" layer="91"/>
-<wire x1="322.58" y1="259.08" x2="327.66" y2="259.08" width="0.1524" layer="91"/>
-<wire x1="327.66" y1="259.08" x2="327.66" y2="271.78" width="0.1524" layer="91"/>
-<junction x="322.58" y="259.08"/>
+<wire x1="322.58" y1="248.92" x2="322.58" y2="254" width="0.1524" layer="91"/>
+<wire x1="322.58" y1="254" x2="327.66" y2="254" width="0.1524" layer="91"/>
+<wire x1="327.66" y1="254" x2="327.66" y2="269.24" width="0.1524" layer="91"/>
+<junction x="322.58" y="254"/>
 <pinref part="SUPPLY15" gate="G$1" pin="3.3V"/>
 </segment>
 <segment>
@@ -6783,6 +6783,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="C25" gate="G$1" pin="1"/>
 <pinref part="GND28" gate="1" pin="GND"/>
+<wire x1="322.58" y1="261.62" x2="322.58" y2="264.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C29" gate="G$1" pin="1"/>

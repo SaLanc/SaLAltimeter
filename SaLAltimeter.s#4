@@ -7432,13 +7432,15 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="U$7" gate="G$1" pin="SI"/>
 <wire x1="299.72" y1="215.9" x2="297.18" y2="215.9" width="0.1524" layer="91"/>
-<wire x1="297.18" y1="215.9" x2="297.18" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="215.9" x2="297.18" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="205.74" x2="294.64" y2="205.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$36" class="0">
 <segment>
 <pinref part="U$7" gate="G$1" pin="SCLK"/>
-<wire x1="299.72" y1="213.36" x2="299.72" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="299.72" y1="213.36" x2="299.72" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="299.72" y1="203.2" x2="294.64" y2="203.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$38" class="0">
@@ -7462,7 +7464,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="U$7" gate="G$1" pin="CSN"/>
 <wire x1="314.96" y1="200.66" x2="314.96" y2="195.58" width="0.1524" layer="91"/>
-<wire x1="314.96" y1="195.58" x2="302.26" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="314.96" y1="195.58" x2="294.64" y2="195.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$29" class="0">
@@ -7475,7 +7477,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <net name="N$30" class="0">
 <segment>
 <pinref part="U$7" gate="G$1" pin="GPOI1"/>
-<wire x1="309.88" y1="200.66" x2="302.26" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="309.88" y1="200.66" x2="294.64" y2="200.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
