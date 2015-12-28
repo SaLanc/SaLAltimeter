@@ -6260,15 +6260,15 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="NAME" x="355.854" y="227.965" size="1.27" layer="95" rot="R180"/>
 <attribute name="VALUE" x="355.219" y="230.124" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="C21" gate="G$1" x="355.6" y="233.68" smashed="yes" rot="R90">
-<attribute name="NAME" x="353.06" y="235.839" size="1.27" layer="95"/>
-<attribute name="VALUE" x="357.759" y="235.204" size="1.778" layer="96" rot="R90"/>
+<instance part="C21" gate="G$1" x="353.06" y="233.68" smashed="yes" rot="R90">
+<attribute name="NAME" x="350.52" y="235.839" size="1.27" layer="95"/>
+<attribute name="VALUE" x="355.219" y="235.204" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="C22" gate="G$1" x="342.9" y="241.3" smashed="yes" rot="R90">
 <attribute name="NAME" x="339.979" y="242.824" size="1.27" layer="95" rot="R90"/>
 <attribute name="VALUE" x="345.059" y="242.824" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="SUPPLY14" gate="G$1" x="350.52" y="243.84"/>
+<instance part="SUPPLY14" gate="G$1" x="347.98" y="243.84"/>
 <instance part="GND24" gate="1" x="358.14" y="228.6" rot="R90"/>
 <instance part="GND25" gate="1" x="358.14" y="233.68" rot="R90"/>
 <instance part="C23" gate="G$1" x="340.36" y="256.54" smashed="yes">
@@ -6494,11 +6494,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="U$7" gate="G$1" pin="AVDD_SYNTH1"/>
 <wire x1="337.82" y1="226.06" x2="345.44" y2="226.06" width="0.1524" layer="91"/>
 <wire x1="345.44" y1="226.06" x2="345.44" y2="233.68" width="0.1524" layer="91"/>
-<wire x1="345.44" y1="233.68" x2="350.52" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="345.44" y1="233.68" x2="347.98" y2="233.68" width="0.1524" layer="91"/>
 <pinref part="C21" gate="G$1" pin="1"/>
 <pinref part="SUPPLY14" gate="G$1" pin="3.3V"/>
-<wire x1="350.52" y1="233.68" x2="350.52" y2="243.84" width="0.1524" layer="91"/>
-<junction x="350.52" y="233.68"/>
+<wire x1="347.98" y1="233.68" x2="347.98" y2="243.84" width="0.1524" layer="91"/>
+<junction x="347.98" y="233.68"/>
 </segment>
 <segment>
 <pinref part="U$7" gate="G$1" pin="AVDD_SYNTH2"/>
@@ -6758,7 +6758,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="C21" gate="G$1" pin="2"/>
 <pinref part="GND25" gate="1" pin="GND"/>
-<wire x1="358.14" y1="233.68" x2="355.6" y2="233.68" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C20" gate="G$1" pin="2"/>
@@ -7433,13 +7432,15 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="U$7" gate="G$1" pin="SI"/>
 <wire x1="299.72" y1="215.9" x2="297.18" y2="215.9" width="0.1524" layer="91"/>
-<wire x1="297.18" y1="215.9" x2="297.18" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="215.9" x2="297.18" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="205.74" x2="294.64" y2="205.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$36" class="0">
 <segment>
 <pinref part="U$7" gate="G$1" pin="SCLK"/>
-<wire x1="299.72" y1="213.36" x2="299.72" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="299.72" y1="213.36" x2="299.72" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="299.72" y1="203.2" x2="294.64" y2="203.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$38" class="0">
@@ -7463,7 +7464,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="U$7" gate="G$1" pin="CSN"/>
 <wire x1="314.96" y1="200.66" x2="314.96" y2="195.58" width="0.1524" layer="91"/>
-<wire x1="314.96" y1="195.58" x2="302.26" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="314.96" y1="195.58" x2="294.64" y2="195.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$29" class="0">
@@ -7476,7 +7477,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <net name="N$30" class="0">
 <segment>
 <pinref part="U$7" gate="G$1" pin="GPOI1"/>
-<wire x1="309.88" y1="200.66" x2="302.26" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="309.88" y1="200.66" x2="294.64" y2="200.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

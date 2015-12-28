@@ -2197,6 +2197,15 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <text x="0.616" y="0.75" size="1.27" layer="51">+</text>
 <text x="-1.384" y="0.75" size="1.27" layer="51">-</text>
 </package>
+<package name="SMA-EDGE">
+<description>&lt;b&gt;SMA Antenna Connector&lt;/b&gt;&lt;p&gt;
+This is a footprint for an edge mount RF antenna. Works pretty well with SMA type connectors but may also work with other edge mount RF connectors. Keep in mind, these edge mount connectors assume you are using a 0.062" PCB thickness.</description>
+<smd name="GND@0" x="0" y="0" dx="1.524" dy="4.064" layer="1" cream="no"/>
+<smd name="SIG" x="2.54" y="0" dx="1.524" dy="4.064" layer="1" cream="no"/>
+<smd name="GND@1" x="5.08" y="0" dx="1.524" dy="4.064" layer="1" cream="no"/>
+<smd name="GND@2" x="0" y="0" dx="1.524" dy="4.064" layer="16"/>
+<smd name="GND@3" x="5.08" y="0" dx="1.524" dy="4.064" layer="16"/>
+</package>
 </packages>
 <symbols>
 <symbol name="JST_2MM_MALE">
@@ -2258,6 +2267,16 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <text x="-2.54" y="5.842" size="1.778" layer="95">&gt;NAME</text>
 <pin name="1" x="7.62" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="2" x="7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+</symbol>
+<symbol name="SMA_EDGE">
+<wire x1="0" y1="-2.54" x2="0" y2="-12.7" width="0.254" layer="94"/>
+<circle x="0" y="0" radius="1.1359" width="0.254" layer="94"/>
+<circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
+<pin name="GND@0" x="-2.54" y="-5.08" visible="off" length="short"/>
+<pin name="SIGNAL" x="5.08" y="0" visible="off" length="middle" rot="R180"/>
+<pin name="GND@1" x="-2.54" y="-7.62" visible="off" length="short"/>
+<pin name="GND@2" x="-2.54" y="-10.16" visible="off" length="short"/>
+<pin name="GND@3" x="-2.54" y="-12.7" visible="off" length="short"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2565,6 +2584,27 @@ Now with smashable polarity marks!</description>
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SMA_EDGE" prefix="J$">
+<description>&lt;b&gt;SMA Antenna Connector&lt;/b&gt;
+End launch SMA connector. The paste layer has been removed so that the connector can be hand soldered onto the board after reflow.</description>
+<gates>
+<gate name="1" symbol="SMA_EDGE" x="-2.54" y="7.62"/>
+</gates>
+<devices>
+<device name="" package="SMA-EDGE">
+<connects>
+<connect gate="1" pin="GND@0" pad="GND@0"/>
+<connect gate="1" pin="GND@1" pad="GND@1"/>
+<connect gate="1" pin="GND@2" pad="GND@2"/>
+<connect gate="1" pin="GND@3" pad="GND@3"/>
+<connect gate="1" pin="SIGNAL" pad="SIG"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -6055,6 +6095,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SUPPLY21" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="GND42" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND43" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="J$1" library="SparkFun-Connectors" deviceset="SMA_EDGE" device=""/>
+<part name="GND44" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6237,9 +6279,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="NAME" x="333.248" y="258.953" size="1.27" layer="95"/>
 <attribute name="VALUE" x="334.264" y="254.381" size="1.778" layer="96"/>
 </instance>
-<instance part="C25" gate="G$1" x="322.58" y="261.62" smashed="yes">
-<attribute name="NAME" x="323.088" y="264.033" size="1.27" layer="95"/>
-<attribute name="VALUE" x="324.104" y="259.461" size="1.778" layer="96"/>
+<instance part="C25" gate="G$1" x="322.58" y="256.54" smashed="yes">
+<attribute name="NAME" x="323.088" y="258.953" size="1.27" layer="95"/>
+<attribute name="VALUE" x="324.104" y="254.381" size="1.778" layer="96"/>
 </instance>
 <instance part="C26" gate="G$1" x="314.96" y="261.62" smashed="yes">
 <attribute name="NAME" x="315.468" y="264.033" size="1.27" layer="95"/>
@@ -6251,10 +6293,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </instance>
 <instance part="GND26" gate="1" x="340.36" y="264.16" rot="R180"/>
 <instance part="GND27" gate="1" x="332.74" y="264.16" rot="R180"/>
-<instance part="GND28" gate="1" x="322.58" y="269.24" rot="R180"/>
+<instance part="GND28" gate="1" x="322.58" y="266.7" rot="R180"/>
 <instance part="GND29" gate="1" x="314.96" y="269.24" rot="R180"/>
 <instance part="GND30" gate="1" x="309.88" y="269.24" rot="R180"/>
-<instance part="SUPPLY15" gate="G$1" x="327.66" y="271.78"/>
+<instance part="SUPPLY15" gate="G$1" x="327.66" y="269.24"/>
 <instance part="SUPPLY16" gate="G$1" x="320.04" y="271.78"/>
 <instance part="C28" gate="G$1" x="297.18" y="264.16" smashed="yes">
 <attribute name="NAME" x="294.513" y="263.906" size="1.27" layer="95" rot="R90"/>
@@ -6328,6 +6370,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="SUPPLY21" gate="G$1" x="314.96" y="177.8" rot="R180"/>
 <instance part="GND42" gate="1" x="317.5" y="180.34"/>
 <instance part="GND43" gate="1" x="312.42" y="180.34"/>
+<instance part="J$1" gate="1" x="408.94" y="200.66" rot="R180"/>
+<instance part="GND44" gate="1" x="414.02" y="203.2"/>
 </instances>
 <busses>
 </busses>
@@ -6459,10 +6503,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="U$7" gate="G$1" pin="AVDD_SYNTH2"/>
 <pinref part="C25" gate="G$1" pin="2"/>
-<wire x1="322.58" y1="248.92" x2="322.58" y2="259.08" width="0.1524" layer="91"/>
-<wire x1="322.58" y1="259.08" x2="327.66" y2="259.08" width="0.1524" layer="91"/>
-<wire x1="327.66" y1="259.08" x2="327.66" y2="271.78" width="0.1524" layer="91"/>
-<junction x="322.58" y="259.08"/>
+<wire x1="322.58" y1="248.92" x2="322.58" y2="254" width="0.1524" layer="91"/>
+<wire x1="322.58" y1="254" x2="327.66" y2="254" width="0.1524" layer="91"/>
+<wire x1="327.66" y1="254" x2="327.66" y2="269.24" width="0.1524" layer="91"/>
+<junction x="322.58" y="254"/>
 <pinref part="SUPPLY15" gate="G$1" pin="3.3V"/>
 </segment>
 <segment>
@@ -6739,6 +6783,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="C25" gate="G$1" pin="1"/>
 <pinref part="GND28" gate="1" pin="GND"/>
+<wire x1="322.58" y1="261.62" x2="322.58" y2="264.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C29" gate="G$1" pin="1"/>
@@ -6798,6 +6843,23 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="C35" gate="G$1" pin="1"/>
 <pinref part="GND43" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="J$1" gate="1" pin="GND@3"/>
+<pinref part="GND44" gate="1" pin="GND"/>
+<wire x1="411.48" y1="213.36" x2="414.02" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="414.02" y1="213.36" x2="414.02" y2="210.82" width="0.1524" layer="91"/>
+<pinref part="J$1" gate="1" pin="GND@2"/>
+<wire x1="414.02" y1="210.82" x2="414.02" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="414.02" y1="208.28" x2="414.02" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="411.48" y1="210.82" x2="414.02" y2="210.82" width="0.1524" layer="91"/>
+<junction x="414.02" y="210.82"/>
+<pinref part="J$1" gate="1" pin="GND@1"/>
+<wire x1="411.48" y1="208.28" x2="414.02" y2="208.28" width="0.1524" layer="91"/>
+<junction x="414.02" y="208.28"/>
+<pinref part="J$1" gate="1" pin="GND@0"/>
+<wire x1="411.48" y1="205.74" x2="414.02" y2="205.74" width="0.1524" layer="91"/>
+<junction x="414.02" y="205.74"/>
 </segment>
 </net>
 <net name="LVD_IN" class="0">
@@ -7200,6 +7262,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="393.7" y1="208.28" x2="396.24" y2="208.28" width="0.1524" layer="91"/>
 <wire x1="396.24" y1="208.28" x2="396.24" y2="200.66" width="0.1524" layer="91"/>
 <junction x="396.24" y="200.66"/>
+<pinref part="J$1" gate="1" pin="SIGNAL"/>
 </segment>
 </net>
 <net name="N$16" class="0">
