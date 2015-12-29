@@ -9123,9 +9123,9 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <pinref part="S2" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="PA17(I2C/SER1:1+)"/>
-<wire x1="200.66" y1="185.42" x2="203.2" y2="185.42" width="0.1524" layer="91" style="longdash"/>
-<label x="203.2" y="185.42" size="1.27" layer="95" xref="yes"/>
+<pinref part="U1" gate="G$1" pin="PA20(SER5:2+)"/>
+<wire x1="200.66" y1="177.8" x2="203.2" y2="177.8" width="0.1524" layer="91"/>
+<label x="203.2" y="177.8" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -9350,9 +9350,9 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <label x="304.8" y="190.5" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="PA16(I2C/SER1:0+)"/>
-<wire x1="200.66" y1="187.96" x2="203.2" y2="187.96" width="0.1524" layer="91" style="longdash"/>
-<label x="203.2" y="187.96" size="1.27" layer="95" xref="yes"/>
+<pinref part="U1" gate="G$1" pin="PA19(SER1:3+)"/>
+<wire x1="200.66" y1="180.34" x2="203.2" y2="180.34" width="0.1524" layer="91"/>
+<label x="203.2" y="180.34" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$30" class="0">
@@ -9375,9 +9375,9 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <label x="337.82" y="88.9" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="PA11(AIN19/SER0:3+)"/>
-<wire x1="200.66" y1="200.66" x2="203.2" y2="200.66" width="0.1524" layer="91" style="longdash"/>
-<label x="203.2" y="200.66" size="1.27" layer="95" xref="yes"/>
+<pinref part="U1" gate="G$1" pin="PB23(SER5:3+)"/>
+<wire x1="200.66" y1="142.24" x2="203.2" y2="142.24" width="0.1524" layer="91"/>
+<label x="203.2" y="142.24" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SPI_MISO" class="0">
@@ -9407,6 +9407,11 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <wire x1="320.04" y1="193.04" x2="304.8" y2="193.04" width="0.1524" layer="91"/>
 <label x="304.8" y="193.04" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="PA16(I2C/SER1:0+)"/>
+<wire x1="200.66" y1="187.96" x2="203.2" y2="187.96" width="0.1524" layer="91" style="longdash"/>
+<label x="203.2" y="187.96" size="1.27" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="SPI_MOSI" class="0">
 <segment>
@@ -9435,6 +9440,11 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <wire x1="307.34" y1="210.82" x2="307.34" y2="198.12" width="0.1524" layer="91"/>
 <wire x1="307.34" y1="198.12" x2="304.8" y2="198.12" width="0.1524" layer="91"/>
 <label x="304.8" y="198.12" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="PA17(I2C/SER1:1+)"/>
+<wire x1="200.66" y1="185.42" x2="203.2" y2="185.42" width="0.1524" layer="91" style="longdash"/>
+<label x="203.2" y="185.42" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SPI_SCK" class="0">
@@ -9467,14 +9477,14 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </net>
 <net name="GPS_TX" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="PA10(AIN18/SER0:2+)"/>
-<wire x1="200.66" y1="203.2" x2="203.2" y2="203.2" width="0.1524" layer="91" style="longdash"/>
-<label x="203.2" y="203.2" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="U4" gate="G$1" pin="RX"/>
 <wire x1="340.36" y1="86.36" x2="337.82" y2="86.36" width="0.1524" layer="91"/>
 <label x="337.82" y="86.36" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="PB22(SER5:2+)"/>
+<wire x1="200.66" y1="144.78" x2="203.2" y2="144.78" width="0.1524" layer="91"/>
+<label x="203.2" y="144.78" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="USB_D+" class="0">

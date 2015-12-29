@@ -8943,22 +8943,12 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <wire x1="43.18" y1="180.34" x2="45.72" y2="180.34" width="0.1524" layer="91" style="longdash"/>
 <label x="45.72" y="180.34" size="1.27" layer="95" xref="yes"/>
 </segment>
-<segment>
-<pinref part="U1" gate="G$1" pin="PA31(SWDIO/SER1:3+)"/>
-<wire x1="200.66" y1="154.94" x2="203.2" y2="154.94" width="0.1524" layer="91"/>
-<label x="203.2" y="154.94" size="1.27" layer="95" xref="yes"/>
-</segment>
 </net>
 <net name="SWCLK" class="0">
 <segment>
 <pinref part="JP1" gate="G$1" pin="SWDCLK/TCK"/>
 <wire x1="43.18" y1="177.8" x2="45.72" y2="177.8" width="0.1524" layer="91" style="longdash"/>
 <label x="45.72" y="177.8" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U1" gate="G$1" pin="PA30(SWCLK/SER1:2+)"/>
-<wire x1="200.66" y1="157.48" x2="203.2" y2="157.48" width="0.1524" layer="91"/>
-<label x="203.2" y="157.48" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="CS_MEM" class="0">
@@ -9034,9 +9024,9 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <junction x="86.36" y="38.1"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="PA21(SER5:3+)"/>
-<wire x1="200.66" y1="175.26" x2="203.2" y2="175.26" width="0.1524" layer="91"/>
-<label x="203.2" y="175.26" size="1.27" layer="95" xref="yes"/>
+<pinref part="U1" gate="G$1" pin="PA31(SWDIO/SER1:3+)"/>
+<wire x1="200.66" y1="154.94" x2="203.2" y2="154.94" width="0.1524" layer="91"/>
+<label x="203.2" y="154.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FIRE_A" class="0">
@@ -9048,9 +9038,9 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <junction x="86.36" y="60.96"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="PA19(SER1:3+)"/>
-<wire x1="200.66" y1="180.34" x2="203.2" y2="180.34" width="0.1524" layer="91"/>
-<label x="203.2" y="180.34" size="1.27" layer="95" xref="yes"/>
+<pinref part="U1" gate="G$1" pin="PA30(SWCLK/SER1:2+)"/>
+<wire x1="200.66" y1="157.48" x2="203.2" y2="157.48" width="0.1524" layer="91"/>
+<label x="203.2" y="157.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FET_A" class="0">
