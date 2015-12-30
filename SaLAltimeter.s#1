@@ -7779,7 +7779,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="C6" library="SparkFun-Passives" deviceset="CAP" device="0402-CAP" value="15pF"/>
 <part name="C7" library="SparkFun-Passives" deviceset="CAP" device="0402-CAP" value="15pF"/>
 <part name="C8" library="SparkFun-Passives" deviceset="CAP" device="0402-CAP" value="0.1uF"/>
-<part name="Y1" library="SparkFun-FreqCtrl" deviceset="CRYSTAL" device="3.2X1.5MM"/>
+<part name="Y1" library="SparkFun-FreqCtrl" deviceset="CRYSTAL" device="3.2X1.5MM" value="32.768kHx"/>
 <part name="GND5" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND6" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND7" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -7878,7 +7878,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="C34" library="SparkFun-Capacitors" deviceset="CAP" device="0402-CAP" value="47nF"/>
 <part name="C35" library="SparkFun-Capacitors" deviceset="CAP" device="0402-CAP" value="47nF"/>
 <part name="C36" library="SparkFun-Capacitors" deviceset="CAP" device="0402-CAP" value="56pF"/>
-<part name="R15" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES"/>
+<part name="R15" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES" value="18"/>
 <part name="C37" library="SparkFun-Capacitors" deviceset="CAP" device="0402-CAP" value="10nF"/>
 <part name="C38" library="SparkFun-Capacitors" deviceset="CAP" device="0402-CAP" value="100pF"/>
 <part name="SUPPLY18" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
@@ -7895,7 +7895,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="GND43" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="J$1" library="SparkFun-Connectors" deviceset="SMA_EDGE" device=""/>
 <part name="GND44" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="U4" library="adafruit" deviceset="GPS_FGPMMOPA6H" device=""/>
+<part name="U4" library="adafruit" deviceset="GPS_FGPMMOPA6H" device="" value="gps"/>
 <part name="GND45" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="D1" library="SparkFun-LED" deviceset="LED-RED" device="0603" value="RED"/>
 <part name="R17" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES" value="301ohm\"/>

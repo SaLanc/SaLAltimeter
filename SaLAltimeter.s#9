@@ -8814,9 +8814,9 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <pinref part="R12" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="PA20(SER5:2+)"/>
-<wire x1="200.66" y1="177.8" x2="203.2" y2="177.8" width="0.1524" layer="91"/>
-<label x="203.2" y="177.8" size="1.27" layer="95" xref="yes"/>
+<pinref part="U1" gate="G$1" pin="PB09(AIN3/SER4:1/TC4:1)"/>
+<wire x1="132.08" y1="157.48" x2="129.54" y2="157.48" width="0.1524" layer="91"/>
+<label x="129.54" y="157.48" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SENSE_A" class="0">
@@ -8829,9 +8829,9 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <pinref part="R10" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="PA18(SER1:2+)"/>
-<wire x1="200.66" y1="182.88" x2="203.2" y2="182.88" width="0.1524" layer="91"/>
-<label x="203.2" y="182.88" size="1.27" layer="95" xref="yes"/>
+<pinref part="U1" gate="G$1" pin="PB08(AIN2/SER4:0/TC4:0)"/>
+<wire x1="132.08" y1="160.02" x2="129.54" y2="160.02" width="0.1524" layer="91"/>
+<label x="129.54" y="160.02" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="FET_B" class="0">
@@ -9237,6 +9237,13 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <pinref part="JP4" gate="G$1" pin="VBUS"/>
 <pinref part="F1" gate="G$1" pin="1"/>
 <wire x1="195.58" y1="71.12" x2="210.82" y2="71.12" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="SENSE_BAT" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="PA04(AIN4/REFB/SER0:0/TC0:0)"/>
+<wire x1="132.08" y1="175.26" x2="129.54" y2="175.26" width="0.1524" layer="91"/>
+<label x="129.54" y="175.26" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
