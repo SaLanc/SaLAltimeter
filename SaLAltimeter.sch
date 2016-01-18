@@ -7763,7 +7763,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="1U2" library="SparkFun-PowerIC" deviceset="V_REG_LDO" device="SMD"/>
 <part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="C1" library="SparkFun-Capacitors" deviceset="CAP" device="0603-CAP" value="1.0uF"/>
+<part name="C1" library="SparkFun-Capacitors" deviceset="CAP" device="0603-CAP" value="2.2uF"/>
 <part name="C2" library="SparkFun-Capacitors" deviceset="CAP" device="0603-CAP" value="2.2uF"/>
 <part name="U$1" library="SaL-lib" deviceset="MAX16054" device=""/>
 <part name="U$2" library="SaL-lib" deviceset="SS345PT" device=""/>
@@ -7902,14 +7902,14 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="C39" library="SparkFun-Capacitors" deviceset="CAP" device="0402-CAP" value="0.1uF"/>
 <part name="SUPPLY22" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="GND46" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R5" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="10kohm"/>
-<part name="R6" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="10kohm"/>
-<part name="R9" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="10kohm"/>
-<part name="R10" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="10kohm"/>
-<part name="R7" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="10kohm"/>
-<part name="R8" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="10kohm"/>
-<part name="R11" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="10kohm"/>
-<part name="R12" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="10kohm"/>
+<part name="R5" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="3.3k"/>
+<part name="R6" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="100"/>
+<part name="R9" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="100K"/>
+<part name="R10" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="27K"/>
+<part name="R7" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="100"/>
+<part name="R8" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="3.3k"/>
+<part name="R11" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="100K"/>
+<part name="R12" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="27K"/>
 <part name="JP4" library="SparkFun-Connectors" deviceset="USB" device="-MICROB"/>
 <part name="F1" library="SparkFun-PowerIC" deviceset="PTC" device="SMD"/>
 <part name="S2" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="SMD-4.6X2.8MM"/>

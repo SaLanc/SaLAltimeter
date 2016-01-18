@@ -1234,7 +1234,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="1U2" library="SparkFun-PowerIC" package="SOT23-5" value="V_REG_LDOSMD" x="15.113" y="15.113" smashed="yes" rot="R270">
 <attribute name="NAME" x="14.859" y="15.875" size="0.6096" layer="25" rot="R270"/>
 </element>
-<element name="C1" library="SparkFun-Capacitors" package="0603-CAP" value="1.0uF" x="15.875" y="12.573" smashed="yes">
+<element name="C1" library="SparkFun-Capacitors" package="0603-CAP" value="2.2uF" x="15.875" y="12.573" smashed="yes">
 <attribute name="NAME" x="17.399" y="12.446" size="0.4064" layer="25" font="vector"/>
 </element>
 <element name="C2" library="SparkFun-Capacitors" package="0603-CAP" value="2.2uF" x="15.24" y="17.78" smashed="yes" rot="R180">
@@ -1784,8 +1784,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="48.641" y1="5.842" x2="47.553" y2="5.842" width="0.254" layer="1"/>
 <wire x1="47.553" y1="5.842" x2="47.371" y2="5.66" width="0.254" layer="1"/>
 <polygon width="0.254" layer="15" isolate="0.3048">
-<vertex x="-5.715" y="22.225"/>
-<vertex x="69.85" y="22.86"/>
+<vertex x="-5.715" y="20.955"/>
+<vertex x="69.85" y="20.955"/>
 <vertex x="69.85" y="-3.175"/>
 <vertex x="-5.715" y="-3.175"/>
 </polygon>
@@ -2230,8 +2230,8 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="-5.715" y="-1.27"/>
 </polygon>
 <polygon width="0.254" layer="1" isolate="0.3048">
-<vertex x="-5.715" y="21.59"/>
-<vertex x="69.85" y="21.59"/>
+<vertex x="-5.715" y="20.955"/>
+<vertex x="69.85" y="20.955"/>
 <vertex x="69.85" y="-1.905"/>
 <vertex x="-5.715" y="-1.905"/>
 </polygon>
@@ -2239,8 +2239,8 @@ Please make sure your boards conform to these design rules.</description>
 <via x="56.134" y="4.572" extent="1-16" drill="0.381"/>
 <via x="17.78" y="12.7" extent="1-16" drill="0.381"/>
 <polygon width="0.254" layer="2" isolate="0.3048">
-<vertex x="-5.715" y="22.225"/>
-<vertex x="69.85" y="22.225"/>
+<vertex x="-5.715" y="20.955"/>
+<vertex x="69.85" y="20.955"/>
 <vertex x="69.85" y="-2.54"/>
 <vertex x="-5.715" y="-2.54"/>
 </polygon>

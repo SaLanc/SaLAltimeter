@@ -1706,6 +1706,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <pin name="AVDD_PFD_CHP" x="15.24" y="25.4" visible="pin" length="short" rot="R270"/>
 <text x="0" y="-2.54" size="1.27" layer="94" align="center-left">&lt;NAME</text>
 <text x="0" y="-5.08" size="1.778" layer="94" align="center-left">CC1120</text>
+<pin name="EP" x="-12.7" y="17.78" length="short"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1829,6 +1830,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <connect gate="G$1" pin="DCPL_XOSC" pad="29"/>
 <connect gate="G$1" pin="DVDD" pad="5"/>
 <connect gate="G$1" pin="DVDD1" pad="12"/>
+<connect gate="G$1" pin="EP" pad="EXP EXP@1 EXP@2 EXP@3 EXP@4 EXP@5 EXP@6 EXP@7 EXP@8 EXP@9"/>
 <connect gate="G$1" pin="EXT_XOSC" pad="32"/>
 <connect gate="G$1" pin="GPIO0" pad="10"/>
 <connect gate="G$1" pin="GPIO2" pad="4"/>
@@ -7777,7 +7779,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="C6" library="SparkFun-Passives" deviceset="CAP" device="0402-CAP" value="15pF"/>
 <part name="C7" library="SparkFun-Passives" deviceset="CAP" device="0402-CAP" value="15pF"/>
 <part name="C8" library="SparkFun-Passives" deviceset="CAP" device="0402-CAP" value="0.1uF"/>
-<part name="Y1" library="SparkFun-FreqCtrl" deviceset="CRYSTAL" device="3.2X1.5MM"/>
+<part name="Y1" library="SparkFun-FreqCtrl" deviceset="CRYSTAL" device="3.2X1.5MM" value="32.768kHx"/>
 <part name="GND5" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND6" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND7" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -7876,7 +7878,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="C34" library="SparkFun-Capacitors" deviceset="CAP" device="0402-CAP" value="47nF"/>
 <part name="C35" library="SparkFun-Capacitors" deviceset="CAP" device="0402-CAP" value="47nF"/>
 <part name="C36" library="SparkFun-Capacitors" deviceset="CAP" device="0402-CAP" value="56pF"/>
-<part name="R15" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES"/>
+<part name="R15" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES" value="18"/>
 <part name="C37" library="SparkFun-Capacitors" deviceset="CAP" device="0402-CAP" value="10nF"/>
 <part name="C38" library="SparkFun-Capacitors" deviceset="CAP" device="0402-CAP" value="100pF"/>
 <part name="SUPPLY18" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
@@ -7893,7 +7895,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="GND43" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="J$1" library="SparkFun-Connectors" deviceset="SMA_EDGE" device=""/>
 <part name="GND44" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="U4" library="adafruit" deviceset="GPS_FGPMMOPA6H" device=""/>
+<part name="U4" library="adafruit" deviceset="GPS_FGPMMOPA6H" device="" value="gps"/>
 <part name="GND45" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="D1" library="SparkFun-LED" deviceset="LED-RED" device="0603" value="RED"/>
 <part name="R17" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES" value="301ohm\"/>
@@ -7921,6 +7923,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="GND48" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R20" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES" value="10k"/>
 <part name="GND49" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND50" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8292,6 +8295,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <attribute name="VALUE" x="313.944" y="183.896" size="1.27" layer="96"/>
 </instance>
 <instance part="GND49" gate="1" x="312.42" y="177.8"/>
+<instance part="GND50" gate="1" x="307.34" y="231.14"/>
 </instances>
 <busses>
 </busses>
@@ -8828,6 +8832,12 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <segment>
 <pinref part="R20" gate="G$1" pin="2"/>
 <pinref part="GND49" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U$7" gate="G$1" pin="EP"/>
+<wire x1="309.88" y1="236.22" x2="307.34" y2="236.22" width="0.1524" layer="91"/>
+<wire x1="307.34" y1="236.22" x2="307.34" y2="233.68" width="0.1524" layer="91"/>
+<pinref part="GND50" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="LVD_IN" class="0">

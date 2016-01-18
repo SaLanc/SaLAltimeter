@@ -156,9 +156,9 @@
 </layers>
 <board>
 <plain>
-<wire x1="-4.572" y1="0" x2="68.123" y2="0" width="0" layer="20"/>
-<wire x1="68.123" y1="0" x2="68.123" y2="19.675" width="0" layer="20"/>
-<wire x1="68.123" y1="19.675" x2="-4.445" y2="19.675" width="0" layer="20"/>
+<wire x1="-4.572" y1="0" x2="68.758" y2="0" width="0" layer="20"/>
+<wire x1="68.758" y1="0" x2="68.758" y2="19.675" width="0" layer="20"/>
+<wire x1="68.758" y1="19.675" x2="-4.445" y2="19.675" width="0" layer="20"/>
 <wire x1="-4.445" y1="19.675" x2="-4.572" y2="0" width="0" layer="20"/>
 </plain>
 <libraries>
@@ -2166,17 +2166,19 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="U$7" pad="EXP@2"/>
 <contactref element="U$7" pad="EXP@5"/>
 <contactref element="U$7" pad="EXP@9"/>
+<wire x1="47.26" y1="11.16" x2="48.26" y2="11.16" width="0.254" layer="1"/>
+<wire x1="47.26" y1="11.16" x2="49.26" y2="11.16" width="0.254" layer="1"/>
+<wire x1="49.26" y1="10.16" x2="49.53" y2="10.16" width="0.254" layer="1"/>
+<wire x1="49.26" y1="10.16" x2="49.26" y2="11.16" width="0.254" layer="1"/>
+<wire x1="48.26" y1="10.16" x2="47.26" y2="10.16" width="0.254" layer="1"/>
+<wire x1="47.26" y1="10.16" x2="47.26" y2="11.16" width="0.254" layer="1"/>
+<wire x1="47.26" y1="10.16" x2="47.26" y2="9.16" width="0.254" layer="1"/>
+<wire x1="47.26" y1="9.16" x2="48.26" y2="9.16" width="0.254" layer="1"/>
+<wire x1="47.26" y1="9.16" x2="49.26" y2="9.16" width="0.254" layer="1"/>
+<wire x1="47.26" y1="9.16" x2="47.26" y2="6.684" width="0.254" layer="16"/>
+<wire x1="47.26" y1="6.684" x2="46.291" y2="5.715" width="0.254" layer="16"/>
 <wire x1="66.04" y1="7.747" x2="66.04" y2="7.747" width="0" layer="19" extent="1-16"/>
 <wire x1="66.04" y1="2.667" x2="66.04" y2="2.667" width="0" layer="19" extent="1-16"/>
-<wire x1="47.26" y1="9.16" x2="45.656" y2="6.35" width="0" layer="19" extent="16-16"/>
-<wire x1="47.26" y1="10.16" x2="47.26" y2="9.16" width="0" layer="19" extent="1-1"/>
-<wire x1="48.26" y1="10.16" x2="47.26" y2="10.16" width="0" layer="19" extent="1-1"/>
-<wire x1="49.26" y1="10.16" x2="48.26" y2="10.16" width="0" layer="19" extent="1-1"/>
-<wire x1="49.26" y1="11.16" x2="49.26" y2="10.16" width="0" layer="19" extent="1-1"/>
-<wire x1="48.26" y1="11.16" x2="48.26" y2="10.16" width="0" layer="19" extent="1-1"/>
-<wire x1="47.26" y1="11.16" x2="47.26" y2="10.16" width="0" layer="19" extent="1-1"/>
-<wire x1="48.26" y1="9.16" x2="47.26" y2="9.16" width="0" layer="19" extent="1-1"/>
-<wire x1="49.26" y1="9.16" x2="49.26" y2="10.16" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LVD_IN">
 <contactref element="U2" pad="1"/>
